@@ -13,7 +13,8 @@ CREATE TABLE `ingress` (
 
 DROP TABLE IF EXISTS `egress`;
 CREATE TABLE `egress` (
-  `report_time` datetime,
+  `crawl_time` datetime,
+  `local_time` datetime,
   `city` varchar(256) NOT NULL,
   `weather` varchar(256) NOT NULL,
   `temperature` int
